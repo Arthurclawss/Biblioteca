@@ -92,11 +92,17 @@ Páginas: 1178
 ----------------------
 
 Título: Harry Potter e a Pedra Filosofal
+
 Autor: J.K. Rowling
+
 Ano: 1997
+
 Páginas: 223
+
 5️⃣ Sair do programa (opção 0)
+
 Programa encerrado...
+
 
 ## Como executar
 
