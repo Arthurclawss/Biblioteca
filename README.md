@@ -26,7 +26,7 @@ Projeto em **Java** que simula um sistema de biblioteca, permitindo cadastrar li
 
 ## Exemplo de uso
 
-1️⃣ Menu inicial
+## 1️⃣ Menu inicial
 
 Quando você roda a classe Principal.java, aparece o menu:
 
@@ -42,7 +42,7 @@ Quando você roda a classe Principal.java, aparece o menu:
 
 Escolha uma opção:
 
-2️⃣ Cadastrar um livro manualmente (opção 1)
+## 2️⃣ Cadastrar um livro manualmente (opção 1)
 
 Título do livro: O Senhor dos Anéis
 
@@ -57,7 +57,7 @@ Livro cadastrado com sucesso!
 
 O livro agora está salvo na lista interna do programa.
 
-3️⃣ Buscar livro na web (opção 2)
+## 3️⃣ Buscar livro na web (opção 2)
 
 Digite o título do livro: Harry Potter e a Pedra Filosofal
 
@@ -77,7 +77,7 @@ Livro salvo com sucesso!
 
 O programa utiliza a API Open Library para buscar livros pelo título.
 
-4️⃣ Listar livros salvos (opção 3)
+## 4️⃣ Listar livros salvos (opção 3)
 
 === Livros Salvos ===
 ----------------------
@@ -89,6 +89,7 @@ Autor: J.R.R. Tolkien
 Ano: 1954
 
 Páginas: 1178
+
 ----------------------
 
 Título: Harry Potter e a Pedra Filosofal
@@ -99,7 +100,7 @@ Ano: 1997
 
 Páginas: 223
 
-5️⃣ Sair do programa (opção 0)
+## 5️⃣ Sair do programa (opção 0)
 
 Programa encerrado...
 
