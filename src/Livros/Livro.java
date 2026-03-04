@@ -1,37 +1,69 @@
 package Livros;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class Livro {
-    String titulo;
-    String autor;
-    int numeroDePaginas;
-    int anoDeLancamento;
+    private String titulo;
+    private String autor;
+    private int numeroDePaginas;
+    private int anoDeLancamento;
 
-    Scanner sc = new Scanner(System.in);
 
-    public void resgatarInformacoes(){
-        System.out.println("Título do livro: ");
-        titulo = sc.nextLine();
+        public static Livro converter(LivroApi api){
+            Livro livro = new Livro();
 
-        System.out.println("Autor do livro: ");
-        autor = sc.nextLine();
+            livro.setTitulo(api.getTitle());
 
-        System.out.println("Numero de paginas do livro: ");
-        numeroDePaginas = sc.nextInt();
-        sc.nextLine();
+            if(api.getAuthor_name() != null && !api.getAuthor_name().isEmpty()){
+                livro.setAutor((api.getAuthor_name().get(0)));
+            }else {livro.setAutor("Desconhecido...");}
 
-        System.out.println("Ano de lançamento do livro: ");
-        anoDeLancamento = sc.nextInt();
-        sc.nextLine();
+            if(api.getNumber_of_pages_median() != null){
+                livro.setNumeroDePaginas(api.getNumber_of_pages_median());
+            }
 
+            if(api.getFirst_publish_year() != null){
+                livro.setAnoDeLancamento(api.getFirst_publish_year());
+            }
+
+            return livro;
+        };
+
+
+    //Getters and setters
+    public String getTitulo() {
+        return titulo;
     }
 
-    public void mostrarLista(){
-        System.out.println("Título: "+titulo);
-        System.out.println("autor: "+autor);
-        System.out.println("numeroDePaginas: "+numeroDePaginas);
-        System.out.println("anoDeLancamento: "+anoDeLancamento);
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
     }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
+    public int getNumeroDePaginas() {
+        return numeroDePaginas;
+    }
+
+    public void setNumeroDePaginas(int numeroDePaginas) {
+        this.numeroDePaginas = numeroDePaginas;
+    }
+
+    public int getAnoDeLancamento() {
+        return anoDeLancamento;
+    }
+
+    public void setAnoDeLancamento(int anoDeLancamento) {
+        this.anoDeLancamento = anoDeLancamento;
+    }
+
+
 
 }
